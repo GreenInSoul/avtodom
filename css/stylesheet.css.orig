@@ -1,0 +1,501 @@
+<<<<<<< local
+﻿/* RESET CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.clr{
+	clear:both;
+}
+*:focus, *:active {
+	outline: none !important;
+}
+input:focus::-ms-input-placeholder { /* IE */
+	color: transparent;
+}
+input:focus::-ms-input-placeholder { /* Edge */
+	color: transparent;
+}
+input:focus::-webkit-input-placeholder { /* Cr,Op,Sf */
+	color: transparent;
+}
+input:focus:-moz-placeholder { /* Fr 4-19 */
+	color: transparent;
+}
+input:focus::-moz-placeholder { /* Fr 4-19 */
+	color: transparent;
+}
+/* RESET CSS ENDS */
+/* GENERAL STYLES */
+html, body {
+	min-height: 100%;
+	height: 100%;
+}
+body {
+	font-family: "Verdana", "Verdana", "Geneva", sans-serif;
+	font-size: 400;
+}
+header {
+	background: url("../img/") left bottom no-repeat;
+	min-height: 100%;
+  	height: 100%;
+  	background-size: cover;
+  	position: relative;
+}
+.active {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+/* MEDIA CSS */
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.header_bottom .navbar-inverse .navbar-nav>li>a{
+		padding: 15px 25px;
+	}
+	footer .footer_top .soc ul li{
+		margin: 10px 4px;
+	}
+	footer .footer_top .soc ul li a{
+		width: 35px;
+		height: 33px;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	.header_bottom .navbar-inverse .navbar-nav>li>a{
+		padding: 15px 30px;
+	}
+}
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.footer_aling_center{
+		text-align: center;
+	}
+	.header_top .login_form_mobile{
+		width: 100%;
+	}
+	.header_top .login_form_mobile .login_form input{
+		width: 35%;
+		margin: 0px 1px;
+	}
+	.header_top .login_form_mobile .forgot_password label,
+	.header_top .login_form_mobile .forgot_password a{
+		width: inherit;
+		margin: 5px 0px;
+	}
+	#navigation .navigation_panel ul li{
+		width: 50%;
+		margin-bottom: -2px;
+	}
+	#questions .have_questions{
+		padding: 25px;
+		margin: 40px 0px 20px;
+	}
+	#questions .person{
+		padding-left: 40%;
+	}
+	#questions .person_img{
+		width:25%;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	#questions .person{
+		border-right: none;
+		padding: 0px;
+	}
+	#questions .have_questions{
+		padding: 0px;
+		padding-left: 50%;
+	}
+	#questions .person_img{
+		width: 30%;
+	}
+	h1{
+		font-size: 28px;
+	}
+	h2{
+		font-size: 25px;
+	}
+	p, .look_all, .btn{
+		font-size: 16px;
+	}
+	#questions .have_questions{
+		margin-bottom: 0px;
+	}
+	#questions .questions_border{
+		margin: 0px;
+		margin-bottom: 20px;
+	}
+	.header_bottom .navbar-inverse{
+		background-color: #2c2c2c;
+	}
+	.header_bottom .navbar-nav{
+		margin: 0px -15px;
+	}
+	.header_bottom .navbar-inverse .navbar-nav>li>a,
+	.header_bottom .navbar-inverse .navbar-nav>.active>a{
+		background-image: url('images/arrow_list.png');
+		background-repeat: no-repeat;
+		background-position: 95% center;
+	}
+	.header_bottom .navbar-inverse .navbar-nav>li>a{
+		padding: 5px 30px;
+		border-bottom: 1px solid #000000;
+	}
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	#stock .col-xs-6,#articles .col-xs-6{
+		width: 100%;
+	}
+	#questions .person_img{
+		width: 50%;
+	}
+	h1{
+		font-size: 24px;
+	}
+	h2{
+		font-size: 20px;
+	}
+	p, .look_all, .btn{
+		font-size: 14px;
+	}
+	.header_top .logo img{
+		width: 100%;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+/* Large Devices, Wide Screens */
+@media (min-width : 992px) and (max-width : 1200px) {
+	#navigation .navigation_panel ul li a{
+		font-size: 16px;
+	}
+}=======
+﻿
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.clr{
+	clear:both;
+}
+
+* {
+    margin:0px; padding: 0px; border:none;
+}
+
+*:focus, *:active {
+	outline: none !important;
+}
+input:focus::-ms-input-placeholder { /* IE */
+	color: transparent;
+}
+input:focus::-ms-input-placeholder { /* Edge */
+	color: transparent;
+}
+input:focus::-webkit-input-placeholder { /* Cr,Op,Sf */
+	color: transparent;
+}
+input:focus:-moz-placeholder { /* Fr 4-19 */
+	color: transparent;
+}
+input:focus::-moz-placeholder { /* Fr 4-19 */
+	color: transparent;
+}
+/*************************************index style start*************************************/
+
+body {
+	font-family: Verdana, Verdana, Geneva, sans-serif;
+	max-width: 1700px;
+}
+
+h3 {
+	color: white;
+	text-transform: uppercase;
+}
+
+/************************************header*************************************************/
+
+header {
+
+	background-image: url(../images/header.jpg);
+	padding-bottom: 400px;
+	background-size: cover;
+}
+
+/************************************1st block - journey*************************************/
+.journey {
+	background-color: yellow;
+}
+
+.journey_text {
+	background-color: yellow;
+	padding-top: 50px;
+
+	width: 100%;
+	height: 350px;
+	margin: 0;
+	position: right;
+	
+}
+
+.journey_image {
+	width: 100%;
+
+
+}
+
+
+/*************************************2nd block - advertising******************************/
+
+.advertising {
+	background-color: #37aad7;
+	padding: 30px;
+
+}
+
+.advertising_image {
+	float: left;
+	width: 220px;
+	padding-bottom: 35px;
+	margin: 20px;
+}
+
+/*************************************3rd block - our cars*******************************/
+
+
+.our_cars {
+
+	background-color: yellow;
+	padding-bottom: 20px;
+
+}
+
+.our_cars_images {
+	padding-bottom: 20px;
+	width: 100%;
+
+}
+
+.our_cars_text_header {
+	color: #4d7d8f;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.header_dark_font {
+	color: black;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#indent_buttons_on {
+	
+	margin-bottom: 40px;
+}
+
+/*****************************************4th unit - our journey***********************/
+
+
+.our_journey {
+	background-color: #37aad7;
+
+}
+
+.our_journey_images {
+	width: 100%;
+	padding-bottom: 20%;
+}
+
+#dark_button_padding_top {
+	padding-top: 20%;
+
+
+}
+
+.our_journey_header_min {
+	color: yellow;
+	text-transform: uppercase;
+}
+
+/************************************dark_button**************************************/
+
+.dark_button {
+    background: black;
+    color: white; 
+    font-size: 24px;
+    width: 380px;
+    height: 40px;
+    text-transform: uppercase;
+}
+
+/***************************************footer*****************************************/
+#color_yellow_footer {
+background-color: yellow;
+height: 80px;
+text-transform: uppercase;
+color: black;
+text-align: center;
+padding-top: 30px;
+}
+
+#color_blue_footer {
+	background-color: #37aad7;
+	height: 190px;
+	text-transform: uppercase;
+	color: #982323;
+	text-align: center;
+    padding-top: 80px;
+}
+/*************************************media*************************************************/
+
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	
+}
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+/* Large Devices, Wide Screens */
+@media (min-width : 992px) and (max-width : 1200px) {
+	
+}
+
+
+
+>>>>>>> other
